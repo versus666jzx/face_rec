@@ -147,6 +147,7 @@ webrtc_ctx = webrtc_streamer(
 )
 
 if st.checkbox("Show the detected labels", value=True):
+    st.write(webrtc_ctx.state.playing)
     if webrtc_ctx.state.playing:
         labels_placeholder = st.empty()
         # NOTE: The video transformation with object detection and
