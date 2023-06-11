@@ -141,7 +141,7 @@ webrtc_ctx = webrtc_streamer(
         "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}],
         "iceTransportPolicy": "relay",
     },
-    video_frame_callback=video_frame_callback,
+    video_frame_callback=None,
     media_stream_constraints={"video": True, "audio": False},
     async_processing=True,
 )
