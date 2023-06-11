@@ -143,7 +143,7 @@ webrtc_ctx = webrtc_streamer(
     },
     video_frame_callback=None,
     media_stream_constraints={"video": True, "audio": False},
-    async_processing=True,
+    async_processing=False,
 )
 
 if st.checkbox("Show the detected labels", value=True):
