@@ -97,7 +97,7 @@ def video_frame_callback(frame: av.VideoFrame) -> av.VideoFrame:
     # net.setInput(blob)
     # output = net.forward()
 
-    h, w = image.shape[:2]
+    # h, w = image.shape[:2]
 
     # Convert the output array into a structured form.
     # output = output.squeeze()  # (1, 1, N, 7) -> (N, 7)
@@ -141,7 +141,7 @@ webrtc_ctx = webrtc_streamer(
         "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}],
         "iceTransportPolicy": "relay",
     },
-    video_frame_callback=None,
+    # video_frame_callback=None,
     media_stream_constraints={"video": True, "audio": False},
     async_processing=False,
 )
